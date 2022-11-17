@@ -1,0 +1,257 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../img/Music_Monitor.jpg);
+    background-color: aliceblue;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+h6 * {
+    font-family: monospace;
+    font-weight: 900;
+
+}
+
+p {
+    font-family: cursive;
+    font-weight: 200;
+}
+.mainnav .active{
+
+	color: red!important;
+}
+
+.mainnav .active::after{
+
+	content: '';
+	background-color: red;
+	height:2px;
+	display: block;
+	margin-top: 5px;
+}
+
+.hero-nav .active{
+
+	color: red!important;
+	background-color: transparent!important;
+}
+
+.hero-nav .active::after{
+
+	content: '';
+	background-color: red;
+	height:2px;
+	display: block;
+	margin-top: 5px;
+}
+
+.hero-area{
+
+	background-image: url('../images/14.jpg');
+	min-height: 400px;
+	background-position: 20% 30%;
+	background-size: 100%;
+}
+
+
+.audio {
+    position: static;
+    display: block;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px #3d2173a1;
+    transition: all ease 0.4s;
+    margin-bottom: 1rem;
+}
+
+.audio:hover {
+    transform: scale(0.98)translateY(5px);
+    /* overflow: hidden; */
+}
+
+#aplayer {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    box-shadow: 0 -2px 2px #dadada;
+    background-color: #fff;
+    transition: all ease 0.5s;
+    
+}
+
+#aplayer.showPlayer {
+    bottom: 0;
+}
+
+#icon svg {
+    height: 30px;
+    width: 30px;
+    color: red;
+
+}
+
+#icon1 svg {
+    height: 30px;
+    width: 30px;
+    color: rgb(0, 255, 13);
+}
+
+.container {
+    padding-top: 3rem;
+    max-width: 1000px;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+}
+
+header * {
+    display: inline;
+}
+
+/* .top-items svg {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    color: rgb(240, 255, 244);
+}
+
+.top-items svg:hover {
+    color: grey;
+    transition: 0.4s;
+}
+.top-items button{
+    border: none;
+    background: black;
+} */
+
+@media only screen and (max-width:768px) {
+
+    /* .row{
+    display: flex;
+    flex-direction: column;
+ } */
+    .col-md-3 {
+        margin-left: 20px;
+    }
+
+    .audio {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* ul li {
+    list-style: none;
+    color: white;
+}
+
+li div.search {
+    position: fixed;
+    right: 100px;
+
+}
+
+li div.search input[type=search] {
+    border-radius: 8px;
+}
+
+li.se-icon {
+    position: fixed;
+    right: 70px;
+}
+
+/* NAv contents */
+/* #nav-content {
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    left: 0;
+    max-width: 500px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 2px 10px 25px 2px black;
+    transform: translatex(-105%);
+    transition: 0.4s ease transform;
+}
+
+#nav-content .wrapper nav ul li a:hover {
+    color: grey;
+    transition: 0.4s;
+}
+
+#nav-content.show {
+    transform: translateX(0);
+}
+
+#nav-content .wrapper {
+    width: 78%;
+    position: relative;
+}
+
+#nav-content .heading {
+    margin-top: 5rem;
+    display: inline-block;
+    text-align: left;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+
+}
+
+#nav-content ul {
+    list-style: none;
+    text-align: left;
+}
+
+#nav-content ul li {
+    margin-bottom: 2rem;
+}
+
+#nav-content ul li a {
+    display: inline-block;
+    color: white;
+    width: 100%;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+#nav-content .close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(52, 30, 222);
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease background-color;
+}
+
+#nav-content .close-btn:hover {
+    background-color: red;
+}  */

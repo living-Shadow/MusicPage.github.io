@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="APlayer.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="player">
+    </div>
+    <script src="APlayer.min.js"></script>
+    <script>
+        const ap = new APlayer({
+    container: document.getElementById('player'),
+    listFolded:true,
+    audio: [
+        {
+            name: 'name1',
+            artist: 'artist1',
+            url: 'url1.mp3',
+            cover: 'cover1.jpg',
+            lrc: 'lrc1.lrc',
+            theme: '#ebd0c2'
+        },
+        {
+            name: 'name2',
+            artist: 'artist2',
+            url: 'url2.mp3',
+            cover: 'cover2.jpg',
+            lrc: 'lrc2.lrc',
+            theme: '#46718b'
+        }
+    ]
+});
+    </script>
+</body>
+</html>
